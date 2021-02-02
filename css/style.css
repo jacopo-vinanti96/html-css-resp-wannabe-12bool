@@ -1,17 +1,34 @@
+body {
+  background-image: url(https://image.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg);
+  background-size: 50%;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    background-size: 100%;
+  }
+}
+
+
 .container {
   width: 100%;
   margin: auto;
+  color: #1A3B65;
+  text-shadow: 0 0 5px lightblue;
 }
 
 .row {
   margin-top: 100px;
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* RESPONSIVE */
 
 @media screen and (max-width: 991px) {
   .row {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }
 
@@ -80,11 +97,12 @@
   padding:30px
 }
 
-/* COMMON */
-
-[background="grey"]{
-  background-color: #f9f9f9;
+footer {
+  padding: 40px 0 20px;
+  text-align: center;
 }
+
+/* COMMON */
 
 img{
   height: 200px;
@@ -93,8 +111,28 @@ img{
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  img {
+    height: 150px;
+  }
+
+  #why .row img {
+    padding:20px
+  }
+}
+
 h3 {
   margin-bottom: 20px;
+}
+
+hr {
+  border: 2px solid #1A3B65;
+}
+
+@media screen and (min-width: 767px) {
+  #steps hr, #lezioni hr {
+    display: none;
+  }
 }
 
 .clear {
