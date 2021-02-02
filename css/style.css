@@ -9,9 +9,15 @@
 
 /* RESPONSIVE */
 
+@media screen and (max-width: 991px) {
+  .row {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .row {
-    margin-top: 50px;
+    margin-top: 35px;
   }
 }
 
