@@ -1,0 +1,97 @@
+.container {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 767px) {
+  .row {
+    margin-top: 50px;
+  }
+}
+
+[class*='col-'] {
+  padding: 30px 5%;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row > .left, #lezioni .row > .right{
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row > .col,
+#steps .row > .central,
+#steps .row > .right{
+  float: left;
+  width: 33%;
+}
+
+#steps{
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 991px) {
+  #steps .row [class*="col-"]:nth-of-type(3) {
+    float: none;
+    margin: auto;
+  }
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row > .first,
+#why .row > .second,
+#why .row > .third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color:#428bca;
+  border-radius:50%;
+  padding:30px
+}
+
+/* COMMON */
+
+[background="grey"]{
+  background-color: #f9f9f9;
+}
+
+img{
+  height: 200px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.clear {
+  clear:both;
+}
