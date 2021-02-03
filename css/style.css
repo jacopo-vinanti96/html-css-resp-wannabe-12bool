@@ -38,8 +38,8 @@ body {
   }
 }
 
-[class*='col-'] {
-  padding: 30px 5%;
+[class*='col-']:not(.divider) {
+  padding: 15px 5% 30px;
 }
 
 /* BLOCCO LEZIONI */
@@ -69,14 +69,6 @@ body {
 
 #steps{
   text-align: center;
-}
-
-/* RESPONSIVE */
-@media screen and (max-width: 991px) {
-  #steps .row [class*="col-"]:nth-of-type(3) {
-    float: none;
-    margin: auto;
-  }
 }
 
 /* BLOCCO PERCHE */
@@ -121,12 +113,17 @@ img{
   }
 }
 
+h1 {
+  font-size: 30px;
+}
+
 h3 {
   margin-bottom: 20px;
 }
 
 hr {
   border: 2px solid #1A3B65;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 767px) {
